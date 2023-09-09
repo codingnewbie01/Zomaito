@@ -72,9 +72,17 @@ body{
     height: 250px;
     margin-top: -120px;
 }
+#zomaitoM{
+    /* border: 1px solid #da2b71; */
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #logo_search h1{
     font-size: 80px;
     font-weight: 900;
+    /* visibility:hidden; */
 }
 #logo_search p{
     font-size: 39px;
@@ -105,6 +113,23 @@ body{
 }
 .input1::placeholder{
     font-size: 14px;
+}
+.fa-location-dot{
+    font-size: 20px;
+    color: #da2b71;
+    /* border: 1px solid; */
+    height: 100%;
+    width: 25px;
+    padding: 10px;
+    
+}
+.fa-magnifying-glass{
+    font-size: 18px;
+    color: #878889;
+    /* border: 1px solid; */
+    height: 100%;
+    width: 25px;
+    padding: 10px;
 }
 .input2{
     padding: 10px;
@@ -235,7 +260,7 @@ body{
     /* align-items: center; */
     padding: 15px;
     height: 100px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 .card1{
     background-image: url(/img-zomaito/dine-restaurant.jpg);

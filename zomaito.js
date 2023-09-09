@@ -2,18 +2,24 @@
 for (let i = 0; i <=10; i++) {
     console.log("Creating Zomato Clone😁");
     }
-function add(a, b){
-    let c=a+b;
-    console.log(c);
-}
-add(4,234); */
+*/
+// const body=document.querySelector("body");
+// body.addEventListener("mouseover", function(a){
+//     console.log("X:" + a.clientX +"     " + "Y:" + a.clientY);
+// })
 
-const add1= function(a, b){
-    return a+b;
-}
-console.log(add1(14, 56));
+const z=document.querySelector("#zomaitoM");
+const z1=document.querySelector("#zomaito");
 
-const mul =()=>{
-    console.log("This is an arrow function");
-}
-mul();
+// let count =0;
+// z.addEventListener("mouseover", function(e){
+//     if(count==0){
+//         z1.style="visibility: visible;"
+//         count=1;
+//     }
+//     else if(count==1){
+//         // console.log(e)
+//         z1.style="visibility: hidden;"
+//         count=0;
+//     }
+// })
