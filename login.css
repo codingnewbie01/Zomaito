@@ -39,6 +39,7 @@ body{
 }
 .OTP{
     background-color: #da4747;
+    color: white;
 }
 .phonebutton input{
     background: none;
@@ -51,13 +52,15 @@ body{
 .phonebutton button{
     /* background: none; */
     border: none;
-    border: 1.5px solid rgb(236, 229, 229);
+    /* border: 1.5px solid rgb(236, 229, 229); */
     border-radius: 7px;
 }
 .phonebutton1{
     height: 50px;
     width: 100%;
     border-radius: 7px;
+    color: rgb(118, 116, 116);
+    font-size: 18px;
 }
 .phonebutton :hover{
     cursor: pointer;
@@ -67,4 +70,26 @@ body{
     display: flex;
     justify-content: center;
     border: 1px solid gray;
+}
+.Email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-solid{
+    font-size: 25px;
+    /* height: 35px; */
+    /* width: 35px; */
+}
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+.google img{
+    background: none;
+    height: 35px;
+    width: 35px;
+    /* padding: 0px 10px; */
 }

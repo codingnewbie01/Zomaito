@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zomaito-LogIn</title>
     <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="login_body">
@@ -13,15 +14,16 @@
             <div class="phonebutton">
                 <div class="phone">
 
-                    <input type="number" placeholder="Phone" class="phonebutton1" id="phoneno" required>
+                    <input type="number" placeholder="Phone" class="phonebutton1" id="phoneno" max="999" min="1">
                 </div>
                 <button type="submit" class="OTP phonebutton1">Send One Time Password</button>
                 <span class="or">or</span>
-                <button class="Email phonebutton1">Continue with Email</button>
-                <button class="google phonebutton1">Continue with Google</button>
+                <button class="Email phonebutton1"><i class="fa-solid fa-envelope" style="color: #df3a52;"></i>Continue with Email</button>
+                <button class="google phonebutton1"><img src="/img-zomaito/google logo.png" alt="">Continue with Google</button>
             </div>
             <span>New to Zomaito? <a href="#" style="color: #da4747;">Create account</a></span>
         </div>
     </div>
+    <script src="/login.js"></script>
 </body>
 </html>
