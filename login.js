@@ -1,9 +1,8 @@
-let phn=document.querySelector('.phone > input');
+let lg=document.querySelector('.login');
 // let phnVal=phn.value;
-// console.log(phn);
-let phInp;
-phn.addEventListener('input', function(e){
-    // console.log(e.data);
-    phInp=phn.value;
-    console.log(phInp);
-})
+// console.log(lg);
+
+// lg.addEventListener('mouseover', function(e){
+//     console.log(e);
+//     lg.style="visibility: visible"
+// })

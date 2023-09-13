@@ -11,19 +11,61 @@
     <div id="login_body">
         <div class="login">
             <h2>Login</h2>
-            <div class="phonebutton">
-                <div class="phone">
 
-                    <input type="number" placeholder="Phone" class="phonebutton1" id="phoneno" max="999" min="1">
+            
+            <div class="phonebutton">
+
+                <!-- --------------------Phone No-------------------- -->
+
+                <div class="phone">
+                    <input list="ph_prefix" class="ph_input1">
+                    <datalist id="ph_prefix">
+                        <option value="🏳️‍🌈 +91">
+                        <option value="🎌 +028">
+                        <option value="🏳️‍⚧️ 067">
+                        <option value="🏳️‍🌈 +009">
+                        <option value="🎌 +121">
+                        <option value="🏳️‍⚧️ 067">
+                        <option value="🏳️‍🌈 +007">
+                        <option value="🎌 +21">
+                        <option value="🏳️‍⚧️ +89">
+                    </datalist>
+                    <input type="tel" placeholder="Phone" class="ph_input2 phonebutton1" id="phoneno" min="1" required>
                 </div>
                 <button type="submit" class="OTP phonebutton1">Send One Time Password</button>
-                <span class="or">or</span>
-                <button class="Email phonebutton1"><i class="fa-solid fa-envelope" style="color: #df3a52;"></i>Continue with Email</button>
-                <button class="google phonebutton1"><img src="/img-zomaito/google logo.png" alt="">Continue with Google</button>
+
+                <!-- ---------------------OR-------------------------- -->
+                
+                <div id="or">
+                    <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+                    <span class="or">&nbsp;or&nbsp;</span>
+
+                    <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    
+                </div>
+                
+                <!-- ---------------------Buttons-------------------------- -->
+                
+                <button class="Email phonebutton1">
+                    <div>
+                        <i class="fa-solid fa-envelope" style="color: #df3a52;"></i>Continue with Email
+                    </div>
+                </button>
+                <button class="google phonebutton1">
+                    <div>
+                        <img src="/img-zomaito/google_logo-removebg-preview.png" alt="">Continue with Google
+                    </div>
+                </button>
             </div>
+
+            <!-- -------------------New To Zomaito?------------------------ -->
+
             <span>New to Zomaito? <a href="#" style="color: #da4747;">Create account</a></span>
+
         </div>
     </div>
+
     <script src="/login.js"></script>
 </body>
 </html>
