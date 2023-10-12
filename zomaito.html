@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zomaito</title>
-    <link rel="stylesheet" href="/zomaito.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zomaito</title>
+        <link rel="stylesheet" href="/zomaito.css">
+        <link rel="stylesheet" href="/login.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- -----------------------login------------------------------- -->
+    
+    
+    <div id="login_body" >
+        <div class="login">
+            <div id="firsthead">
+                <h2>Login</h2>
+                <p class="close">X</p>
+            </div>
+            
+            <div class="phonebutton">
+                
+                <!-- --------------------Phone No-------------------- -->
+                
+                <div class="phone">
+                    <input list="ph_prefix" class="ph_input1">
+                    <datalist id="ph_prefix">
+                        <option value="🏳️‍🌈 +91">
+                        <option value="🎌 +028">
+                        <option value="🏳️‍⚧️ 067">
+                        <option value="🏳️‍🌈 +009">
+                        <option value="🎌 +121">
+                        <option value="🏳️‍⚧️ 067">
+                        <option value="🏳️‍🌈 +007">
+                        <option value="🎌 +21">
+                        <option value="🏳️‍⚧️ +89">
+                        </datalist>
+                        <input type="number" placeholder="Phone" class="ph_input2 phonebutton1" id="phoneno" min="1" max="999999999" required>
+                        </div>
+                        <button type="submit" class="OTP phonebutton1">Send One Time Password</button>
+                        
+                        <!-- ---------------------OR-------------------------- -->
+                        
+                        <div id="or">
+                            
+                            <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            
+                            <span class="or">&nbsp;or&nbsp;</span>
+                            
+                            <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>   
+                            
+                        </div>
+                        
+                        <!-- ---------------------Buttons-------------------------- -->
+                        
+                        <button class="Email phonebutton1">
+                    <div>
+                        <i class="fa-solid fa-envelope" style="color: #df3a52;"></i>Continue with Email
+                    </div>
+                </button>
+                <button class="google phonebutton1">
+                    <div>
+                        <img src="/img-zomaito/google_logo-removebg-preview.png" alt="">Continue with Google
+                    </div>
+                </button>
+            </div>
+            
+            <!-- -------------------New To Zomaito?------------------------ -->
+            
+            <span>New to Zomaito? <a href="#" style="color: #da4747;">Create account</a></span>
+            
+        </div>
+    </div>
+    
+    
+    <!-- -----------------------login------------------------------- -->
+    
+    <div id="transP">
+        
+    </div>
+    
+    <!-- ****************************1st Div************************* -->
+    
     <div id="firstDiv">
         <div id="header">
             <div class="L-header">
                 <i class="fa-solid fa-mobile-screen-button"></i><a href="#download_zomaito">Get the App</a>
             </div>
             <div class="R-header">
-                <a href="#investor_relations">Investor Relations</a>
+                <a href="/zomaito_investor_rel.html" target="_self">Investor Relations</a>
                 <a href="#add_restaurant">Add restaurant</a>
-                <a href="/login.html" target="_blank">Log in</a>
+                <a href="#" target="_self" class="zomaito_log">Log in</a>
                 <a href="#signup">Sign up</a>
             </div>
         </div>
@@ -40,12 +115,12 @@
                         <option value="Uttam Nagar">
                         <option value="Dwarka">
                     </datalist>
-                    <span><i class="fa-solid fa-magnifying-glass"></i></span><input type="text" placeholder="Search for restaurant, cuisine or a dish" class="input2">
+                    <span><i class="fa-solid fa-magnifying-glass" style="color: rgb(176, 170, 170);"></i></span><input type="text" placeholder="Search for restaurant, cuisine or a dish" class="input2">
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- ****************************2nd Div************************* -->
 
     <div id="SecondDivMain">
@@ -116,11 +191,85 @@
         </div>
     </div>
 
+    <!-- ----------------------Popular localities------------------ -->
+    
+    <div id="Popular_localities">
+        <div class="sub_popular_localities">
+            <p style="font-size: 35px; color: rgb(45, 43, 43);">Popular localities in and around <span style="font-weight: 600;">Delhi NCR</span></p>
+            <div class="Delhi_locs">
+                <a href="#"><div>
+                    <p class="p1">Connaught Place</p>
+                    <p class="p2">260 places</p>
+                </div></a>
+                <a href="#"><div>
+                    <p class="p1">Sector 29</p>
+                    <p class="p2">149 places</p>
+                </div></a>
+                <a href="#"><div>
+                    <p class="p1">Sector 18, Noida</p>
+                    <p class="p2">211 places</p>
+                </div></a>
+                <a href="#"><div>
+                    <p class="p1">Rajouri Garden</p>
+                    <p class="p2">336 places</p>
+                </div></a>
+                <a href="#"><div>
+                    <p class="p1">Saket</p>
+                    <p class="p2">332 places</p>
+                </div></a>
+                <a href="#"><div>
+                    <p class="p1">DLF Cyber City</p>
+                    <p class="p2">165 places</p>
+                </div></a>
+                <a href="#"><div>
+                    <p class="p1">Golf Course Road</p>
+                    <p class="p2">161 places</p>
+                </div></a>
+                
+                <a href="#"><div>
+                    <p class="p1">DLF Phase 4</p>
+                    <p class="p2">225 places</p>
+                </div></a>
 
+                <a href=""><div>
+                    <p class="see_more" style="text-align: center; font-size: 19px;">see more</p>
+                </div></a>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    <!-- ----------------------Get the Zomaito App------------------ -->
+    <div id="get_Zomaito_App">
+        <div class="sub_get_Zomaito_App">
+            <div class="Zomaito_App_img">
+                <img src="/img-zomaito/f773629053b24263e69f601925790f301680693809.png" alt="">
+            </div>
+            <div class="Zomaito_App_txt">
+                <p style="font-size: 45px;">Get the Zomato app</p>
+                <p style="font-size: 17px; width: 75%;">We will send you a link, open it on your phone to download the app</p>
+                <div class="email_phone_link_btn">
 
-
-
-
+                    <div><input type="radio" id="link">Email</div>
+                    <div><input type="radio" id="link">Phone</div>
+                </div>
+                <div class="enter_email_phone">
+                    <input type="text" id="link" placeholder="Email">
+                    <button>Share App Link</button>
+                </div>
+                
+                <p style="font-size: 14px;">Download app from</p>
+                
+                <div class="gplay-astore">
+                    <a href=""><img src="/img-zomaito/gplay.webp" alt=""></a>
+                    <a href=""><img src="/img-zomaito/apple_store.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -154,5 +303,6 @@
         </div>
     </div>
 <script src="/zomaito.js"></script>
+<script src="/login.js"></script>
 </body>
 </html>

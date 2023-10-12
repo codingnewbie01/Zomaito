@@ -11,6 +11,16 @@ a{
 body{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+}
+
+#transP{
+    position: fixed;
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.84);
 }
 #firstDiv{
     color: white;
@@ -46,6 +56,11 @@ body{
     font-size: 14px;
     width: 8.5%;
 }
+.L-header i{
+    /* border: 2px solid red; */
+    font-size: 14px;
+
+}
 
 .R-header{
     /* border: 2px solid red; */
@@ -76,6 +91,10 @@ body{
     height: 250px;
     margin-top: -120px;
 }
+.searchBar i{
+    font-size: 22px;
+}
+
 #zomaitoM{
     /* border: 1px solid #da2b71; */
     height: 75px;
@@ -333,4 +352,166 @@ body{
 .lang{
     /* border: .5px solid black; */
     width: 140px;
+}
+
+/* ----------------------Popular localities------------------ */
+
+#Popular_localities{
+    width: 100%;
+    height: 550px;
+    /* border: 2px solid #da2b71; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub_popular_localities{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 70%;
+    /* border: 2px solid #da2b71; */
+}
+.Delhi_locs{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.Delhi_locs div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #d7d3d5;
+    border-radius: 7px;
+    height: 80px;
+    padding: 0px 20px;
+    box-shadow: 0px .5px 3px rgb(215, 209, 209);
+    /* width: 30%; */
+    
+}
+
+.Delhi_locs div:hover{
+    box-shadow: 0px .5px 3px rgb(176, 171, 171);
+    cursor: pointer;
+    
+}
+.Delhi_locs div p{
+    font-family: sans-serif;
+    
+}
+.p1{
+    color: rgb(36, 34, 34);
+    font-size: 21px;
+    font-weight: lighter;
+}
+.p2{
+    color: rgb(90, 88, 88);
+    font-size: 15px;
+    /* font-family: sans-serif;
+    font-weight: lighter; */
+}
+.see_more span{
+    transform: rotate(90deg);
+}
+
+/* ----------------------get the zomaito app------------------ */
+
+#get_Zomaito_App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBF7;
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid #da2b71; */
+}
+.sub_get_Zomaito_App{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 70%;
+    height: 85%;
+    /* border: 2px solid #da2b71; */
+    margin-left: 50px;
+}
+.Zomaito_App_img img{
+    height: 270px;
+    width: 250px;
+}
+.Zomaito_App_img{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+    /* border: 2px solid red; */
+    
+}
+.Zomaito_App_txt{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 65%;
+    height: 90%;
+    /* border: 2px solid blue; */
+    
+}
+.email_phone_link_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    /* border: 2px solid blue; */
+}
+.email_phone_link_btn div{
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+.email_phone_link_btn input{
+    width: 18px;
+    height: 18px;
+    /* color: #da2b71; */
+}
+
+.enter_email_phone{
+    /* border: 2px solid blue; */
+    
+}
+.enter_email_phone input{
+    border: none;
+    width: 325px;
+    border: 1px solid rgb(208, 201, 201);
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 19px;
+    padding-left: 10px;
+}
+.enter_email_phone input::placeholder{
+    font-size: 19px;
+    color: rgb(183, 179, 179);
+    /* padding-left: 10px; */
+}
+.enter_email_phone button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(230, 16, 87);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    
+}
+.gplay-astore{
+    /* border: 2px solid maroon ; */
+}
+.gplay-astore img{
+    width: 150px;
+    height:50px;
+    margin-right: 15px;
 }

@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#firstDiv{
+    color: rgb(241, 232, 232);
+    background-color: #E23744;
+    height: 100vh;
+    width: 100%;
+}

@@ -1,25 +1,35 @@
-/*
-for (let i = 0; i <=10; i++) {
-    console.log("Creating Zomato Clone😁");
-    }
-*/
-// const body=document.querySelector("body");
-// body.addEventListener("mouseover", function(a){
-//     console.log("X:" + a.clientX +"     " + "Y:" + a.clientY);
-// })
+const lg=document.querySelector(".login");
 
-const z=document.querySelector("#zomaitoM");
-const z1=document.querySelector("#zomaito");
+const zlg=document.querySelector(".zomaito_log");
 
-// let count =0;
-// z.addEventListener("mouseover", function(e){
-//     if(count==0){
-//         z1.style="visibility: visible;"
-//         count=1;
-//     }
-//     else if(count==1){
-//         // console.log(e)
-//         z1.style="visibility: hidden;"
-//         count=0;
-//     }
-// })
+const close=document.querySelector(".close");
+const transP=document.querySelector("#transP");
+
+// console.log(zbody.style.overflow);
+
+zlg.addEventListener("click", (e)=>{
+    // console.log(e);
+    lg.style.visibility="visible";
+    transP.style.visibility="visible";
+    
+    // console.log(lg.style);
+    // zbody.style.overflow="hidden";
+})
+transP.addEventListener("click", (e)=>{
+    // console.log(e);
+    lg.style.visibility="hidden";
+    transP.style.visibility="hidden";
+    
+    // console.log(lg.style);
+    // zbody.style.overflow="hidden";
+})
+
+close.addEventListener("click",(e)=>{
+    // console.log(e);
+    lg.style.visibility="hidden";
+    transP.style.visibility="hidden";
+    // console.log(lg.style);
+    // zbody.style.overflow="scroll";
+
+})
+
