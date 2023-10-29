@@ -253,8 +253,8 @@
                 <p style="font-size: 17px; width: 75%;">We will send you a link, open it on your phone to download the app</p>
                 <div class="email_phone_link_btn">
 
-                    <div><input type="radio" id="link">Email</div>
-                    <div><input type="radio" id="link">Phone</div>
+                    <div><input type="radio" id="" name="linkAt" value="Email" checked>Email</div>
+                    <div><input type="radio" id="" name="linkAt" value="Phone">Phone</div>
                 </div>
                 <div class="enter_email_phone">
                     <input type="text" id="link" placeholder="Email">
@@ -271,7 +271,29 @@
         </div>
     </div>
 
+<!-- ****************************FAQ************************* -->
+<div id="FAQ">
+    <p>FAQ</p>
+    <div class="subFAQ">
+        <div class="faq faq1">
+            <p>Why to choose Zomaito?</p>
+            <p class="faq11">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sed corrupti ex alias qui, commodi quas asperiores saepe eligendi omnis similique facere consectetur, ipsum suscipit accusamus earum libero vitae voluptatum laboriosam quis fuga distinctio voluptas labore. Expedita error provident unde quae corrupti qui quidem voluptas, deserunt, rerum veniam dignissimos non.</p>
+        </div>
+        <div class="faq faq2">
+            <p>Why not to choose Zomaito?</p>
+        </div>
+        <div class="faq faq3">
+            <p>Why to choose Zomaito?</p>
+        </div>
+        <div class="faq faq4">
+            <p>Why to choose Zomaito?</p>
+        </div>
+        <div class="faq faq5">
+            <p>Why to choose Zomaito?</p>
+        </div>
 
+    </div>
+</div>
 
 
     <!-- *************************** Footer ************************* -->
@@ -302,7 +324,21 @@
             <div class="footdiv3"></div>
         </div>
     </div>
+
+<script src="/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $(".phone input").focus(function(){
+        $(this).css("border","2px solid #da4747");
+       }); 
+       $(".phone input").blur(function(){
+        $(this).css("border","");
+       }); 
+    });
+
+</script>
 <script src="/zomaito.js"></script>
 <script src="/login.js"></script>
+
 </body>
 </html>
